@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* for (var i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                console.log(`${i}는 짝수`);
+            } else {
+                console.log(`${i}는 홀수`)
+            }
+        } */
+
+        var str = `<table border="1px" align="center">`;
+        document.write("<tr>");
+
+        for (var i = 1; i <= 9; i++) {
+            document.write("<tr>");
+            for (var j = 1; j <= 9; j++) {
+                document.write(`<td align ="center">`);
+                str = (`${i} * ${j} = ${i * j}`);
+                document.write(str);
+                document.write("</td>");
+            }
+            document.write(`</tr>`);
+        }
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
